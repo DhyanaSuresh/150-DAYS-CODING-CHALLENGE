@@ -3,7 +3,6 @@ class Solution {
         ListNode dummy = new ListNode(0); // Create a dummy node to act as the starting point for the result linked list
         ListNode ptr = dummy; // Pointer to traverse and build the result linked list
         int carry = 0; // Initialize carry to handle sums greater than or equal to 10
-        
 
         while (l1 != null || l2 != null || carry != 0) { // Loop until both lists are exhausted and there is no carry left
             int digit1 = (l1 != null) ? l1.val : 0; // Extract the value from l1 if it exists, otherwise use 0
